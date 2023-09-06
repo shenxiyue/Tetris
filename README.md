@@ -150,7 +150,6 @@ For example, the table below is a partial display of the experimental results us
 | clock | eval_bal | eval_mig | sum | sums | violation |
 | ----- | -------- | -------- | --- | ---- | --------- |
 | 0 | 39783.11131 | 3.1 | 39832.56251475 | 39832.56251475 | 0 |
-| 1 | 31311.3932865 | 5.16 | 31393.7056065 | 71226.2681212501 | 0 |
 | 2 | 26269.59334975 | 1.56 | 26294.47846975 | 97520.7465910001 | 0 |
 
 
