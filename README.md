@@ -43,7 +43,7 @@ $t_{1}$, and our optimization problem can be formulated as
 
 $$
 \begin{array}{ll}
-\min_{x_{i}^{k}(t)} & \sum_{t=t_{1}}^{t_{W}} C(t) \\[1mm]
+\min_{x_{i}^{k}(t)} & \sum_{t=t_{1}}^{t_{W}} C(t) \\
 \text {s.t.} & \sum_{i \in \mathcal{M}} x_{i}^{k}(t)=1, \quad \forall k \in \mathcal{N} \\    
 & \sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot cpu^{k}(t) \leq CPU_{i}^{cap}(t), \quad \forall i \in \mathcal{M} \\   
 & \sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot mem^{k}(t) \leq MEM_{i}^{cap}(t), \quad \forall i \in \mathcal{M}
@@ -144,6 +144,13 @@ After the program runs, the information and running results of container migrati
 | clock | eval_bal | eval_mig | sum | sums | violation |
 | ----- | -------- | -------- | --- | ---- | --------- |
 | Timeslot | The load imbalance degree in this timeslot | The migration cost in this timeslot | The value of the optimization objective in this timeslot | The cumulative value of the optimization objective | The number of SLO violations in this timeslot |
+
+For example, the table below is a partial display of the experimental results using *Tetris*:
+
+| clock | eval_bal | eval_mig | sum | sums | violation |
+| ----- | -------- | -------- | --- | ---- | --------- |
+| 0 | 39783.11131 | 3.1 | 39832.56251475 | 39832.56251475 | 0 |
+| 1 | 31311.3932865 | 5.16 | 31393.7056065 | 71226.2681212501 | 0 |
 
 
 ## Publication
