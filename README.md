@@ -42,7 +42,6 @@ $C(t)$ over the time window. We assume the scheduling starts at time
 $t_{1}$, and our optimization problem can be formulated as
 
 $$
-\begin{array}{ll}
 \min _{x_i^k(t)} & \sum_{t=t_1}^{t_W} C(t) \\
 \text { s.t. } & \sum_{i \in \mathcal{M}} x_i^k(t)=1, \quad \forall k \in \mathcal{N}, t \in\left[t_1, t_W\right] \\
 & \sum_{k \in \mathcal{N}} x_i^k(t) \cdot c p u^k(t) \leq C P U_i^{c a p}(t), \quad \forall i \in \mathcal{M}, t \in\left[t_1, t_W\right] \\
