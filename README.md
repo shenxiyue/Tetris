@@ -51,10 +51,10 @@ $$
 $$
 
 $$
-\min_{x_{i}^{k}(t)} & \sum_{t=t_{1}}^{t_{W}} C(t) \label{equ:window}\\
-\text {s.t.} & \sum_{i \in \mathcal{M}} x_{i}^{k}(t)=1, \quad \forall k \in \mathcal{N}\label{equ:constraint3}\\    
-& &\sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot cpu^{k}(t) \leq CPU_{i}^{cap}(t), \quad \forall i \in \mathcal{M} \label{equ:constraint4}\\   
-& &\sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot mem^{k}(t) \leq MEM_{i}^{cap}(t), \! \forall i \in \mathcal{M} \quad
+\min_{x_{i}^{k}(t)} & \sum_{t=t_{1}}^{t_{W}} C(t) \\
+\text {s.t.} & \sum_{i \in \mathcal{M}} x_{i}^{k}(t)=1, \quad \forall k \in \mathcal{N} \\    
+& \sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot cpu^{k}(t) \leq CPU_{i}^{cap}(t), \quad \forall i \in \mathcal{M} \\   
+& \sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot mem^{k}(t) \leq MEM_{i}^{cap}(t), \! \forall i \in \mathcal{M} \quad
 $$
 
 
