@@ -42,9 +42,8 @@ $C(t)$ over the time window. We assume the scheduling starts at time
 $t_{1}$, and our optimization problem can be formulated as
 
 $$
-\singlespacing
 \begin{array}{ll}
-\min_{x_{i}^{k}(t)} & \sum_{t=t_{1}}^{t_{W}} C(t) \\
+\min_{x_{i}^{k}(t)} & \sum_{t=t_{1}}^{t_{W}} C(t) \\[1mm]
 \text {s.t.} & \sum_{i \in \mathcal{M}} x_{i}^{k}(t)=1, \quad \forall k \in \mathcal{N} \\    
 & \sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot cpu^{k}(t) \leq CPU_{i}^{cap}(t), \quad \forall i \in \mathcal{M} \\   
 & \sum_{k \in \mathcal{N}} x_{i}^{k}(t) \cdot mem^{k}(t) \leq MEM_{i}^{cap}(t), \quad \forall i \in \mathcal{M}
